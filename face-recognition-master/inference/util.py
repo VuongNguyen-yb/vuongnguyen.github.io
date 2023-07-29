@@ -20,7 +20,9 @@ def draw_bb_on_img(faces, img):
             outline='green',
             width=2
         )
-        if (face.top_prediction.confidence * 100 > 70) and ():
+
+
+        if (face.top_prediction.confidence * 100 > 60) and ():
             # text background
             draw.rectangle(
                 (
