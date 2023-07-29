@@ -22,19 +22,19 @@ def draw_bb_on_img(faces, img):
         )
 
 
-        if (face.top_prediction.confidence * 100 > 60) and ():
-            # text background
-            draw.rectangle(
-                (
-                    (int(face.bb.left - margin), int(face.bb.bottom) + margin),
-                    (int(face.bb.left + text_size[0] + margin), int(face.bb.bottom) + text_size[1] + 3 * margin)
-                ),
-                fill='black'
-            )
+        #if (face.top_prediction.confidence * 100 > 70) :
+        # text background
+        draw.rectangle(
+            (
+                (int(face.bb.left - margin), int(face.bb.bottom) + margin),
+                (int(face.bb.left + text_size[0] + margin), int(face.bb.bottom) + text_size[1] + 3 * margin)
+            ),
+            fill='black'
+        )
 
-        # text
-            draw.text(
-                (int(face.bb.left), int(face.bb.bottom) + 2 * margin),
-                text,
-                font=font
-            )
+    # text
+        draw.text(
+            (int(face.bb.left), int(face.bb.bottom) + 2 * margin),
+            text,
+            font=font
+        )

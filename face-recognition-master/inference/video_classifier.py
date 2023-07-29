@@ -10,7 +10,7 @@ from inference.constants import MODEL_PATH
 
 
 def main():
-    cap = cv2.VideoCapture("E:/facenet/face-recognition-master/images/Ronaldo SPOTTED in Training Today After Controversial Man United Interview.mp4")
+    cap = cv2.VideoCapture(0)
     face_recogniser = joblib.load(MODEL_PATH)
     preprocess = preprocessing.ExifOrientationNormalize()
 
